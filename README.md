@@ -11,4 +11,5 @@ Ce projet comportera trois parties principales :
 4/ Machine Learning : utiliser un modèle de ML pour estimer le loyer avec les données consolidées.
  
 PS : A partir de cette base de données consolidée, nous avons créée une application que vous pourrez consulter ici
-https://eunicekoffi-projetpython-app-wuniri.streamlit.app/
+[![Open in Streamlit](https://eunicekoffi-projetpython-app-wuniri.streamlit.app/)
+
