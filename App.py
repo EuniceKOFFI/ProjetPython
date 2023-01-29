@@ -20,7 +20,7 @@ st.set_page_config(
 # Importation des données
 #@st.cache
 def load_data():
-    data = pd.read_csv('data/dataf.csv')
+    data = pd.read_csv('https://raw.githubusercontent.com/EuniceKOFFI/ProjetPython/main/data/dataf.csv')
     data = data.drop('Unnamed: 0', axis=1)
     return data
 data = load_data()
@@ -64,7 +64,7 @@ table = data[ (data['Type'] == add_selectbox) & (data['loyer'] <= loyer_max ) & 
 #------------------------------------------------------------------------------------------------------------------------------------------------------
 st.markdown("<h1 style='font-family:Lucida Caligraphy;font-size:60px;color:DarkSlateBlue;text-align: center;'> Bienvenue sur notre site de logement </h1>", unsafe_allow_html=True)
 
-st.image('data/logement1.jpg',use_column_width ='always')
+st.image('https://github.com/EuniceKOFFI/ProjetPython/raw/main/data/logement1.jpg',use_column_width ='always')
 
 st.markdown("<h1 style='font-family:Lucida Caligraphy;font-size:40px;color:DarkSlateBlue;text-align: center;'> Les résultats de vos recherches </h1>", unsafe_allow_html=True)
 
@@ -73,7 +73,7 @@ nombre = table.shape[0]
 
 if nombre == 0 :
     st.write("Désolé, .... Nous n'avons trouvé aucun résultats correspondant aux critères que vous avez sélctionné. \n Veuillez modifier les critères de vos recherches")
-    st.image('data/excuses-so-sorry.gif')
+    st.image('https://github.com/EuniceKOFFI/ProjetPython/raw/main/data/excuses-so-sorry.gif')
     st.write("N'hésitez pas à revenir sur notre site, les offres sont constamment mises à jour en fonction des disponibilités et des offres.")
 else :
     st.write(f"Nous avons trouvé {nombre} résultats correspondants à vos recherches.")
