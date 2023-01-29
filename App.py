@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 # Importation des données
-#@st.cache
+@st.cache
 def load_data():
     data = pd.read_csv('https://raw.githubusercontent.com/EuniceKOFFI/ProjetPython/main/data/dataf.csv')
     data = data.drop('Unnamed: 0', axis=1)
