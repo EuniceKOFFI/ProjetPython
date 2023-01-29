@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import plotly.figure_factory as ff
-import plotly.express as px
-import time
+#import matplotlib.pyplot as plt
+#import plotly.figure_factory as ff
+#import plotly.express as px
+#import time
 from PIL import Image
 
 
